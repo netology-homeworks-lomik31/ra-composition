@@ -1,0 +1,35 @@
+.collapse {
+    transition: height 0.3s ease;
+    overflow: hidden;
+    height: 0;
+}
+
+.collapse.show {
+    height: auto;
+}
+
+.collapsing-expand {
+    animation: expandAnimation 0.3s ease forwards;
+}
+
+.collapsing-collapse {
+    animation: collapseAnimation 0.3s ease forwards;
+}
+
+@keyframes expandAnimation {
+    from {
+        height: 0;
+    }
+    to {
+        height: auto;
+    }
+}
+
+@keyframes collapseAnimation {
+    from {
+        height: auto;
+    }
+    to {
+        height: 0;
+    }
+}
