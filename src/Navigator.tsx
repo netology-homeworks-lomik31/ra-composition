@@ -7,6 +7,7 @@ function Navigator() {
         <div className="navigator">
             <Link to="/cards">cards</Link>
             <Link to="/collapse">collapse</Link>
+            <Link to="/decomposition">decomposition</Link>
         </div>
     );
 }
